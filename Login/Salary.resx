@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAIdQTFRF////
         AAAA/Pz88/Pz0NDQ4+Pj5ubm8vLy1NTU+fn5t7e36+vrw8PDqKiosrKyvb29iYmJcHBwT09PODg4RUVF
@@ -175,5 +175,8 @@
         vflSKzyhCIfCmPGo21IPB/it7si0xV0Gl8KYw/efXWOB62wvGqvjlv4k2gROhVf266/ZqD8YzjvN0A88
         xwv8sNmZDwf90exrzXsyu+u67j8uWJ35Tc6sZQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </value>
   </data>
 </root>

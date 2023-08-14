@@ -42,12 +42,14 @@ namespace Login
                 {
                     dr.Close();
                     MessageBox.Show("No Account avilable with this username and password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtusername.Text = txtpassword.Text = string.Empty;
                 }
 
             }
             else
             {
                 MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
             }
         }
 
@@ -56,6 +58,10 @@ namespace Login
             this.Hide();
             Registration registration = new Registration();
             registration.ShowDialog();
+        }
+
+        internal class UC_Employee
+        {
         }
     }
 }

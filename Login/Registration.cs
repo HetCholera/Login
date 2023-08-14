@@ -42,16 +42,19 @@ namespace Login
                         
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Your Account is created . Please login now.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtusername.Text = txtpassword.Text = txtconfirmpassword.Text = string.Empty;
                     }
                 }
                 else
                 {
                     MessageBox.Show("Please enter both password same ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtusername.Text = txtpassword.Text = txtconfirmpassword.Text = string.Empty;
                 }
             }
             else
             {
                 MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtusername.Text = txtpassword.Text = txtconfirmpassword.Text = string.Empty;
             }
         }
         private void button2_Click(object sender, EventArgs e)

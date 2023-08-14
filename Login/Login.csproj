@@ -47,9 +47,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,6 +66,115 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="account.Designer.cs">
+      <DependentUpon>account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_applicant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_applicant.Designer.cs">
+      <DependentUpon>add_applicant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_basic_salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_basic_salary.Designer.cs">
+      <DependentUpon>add_basic_salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_bonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_bonus.Designer.cs">
+      <DependentUpon>add_bonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_branch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_branch.Designer.cs">
+      <DependentUpon>add_branch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_designation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_designation.Designer.cs">
+      <DependentUpon>add_designation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_installment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_installment.Designer.cs">
+      <DependentUpon>add_installment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_insurance_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_insurance_account.Designer.cs">
+      <DependentUpon>add_insurance_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_loan.Designer.cs">
+      <DependentUpon>add_loan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_scheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_scheme.Designer.cs">
+      <DependentUpon>add_scheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advance_Salary_Scheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advance_Salary_Scheme.Designer.cs">
+      <DependentUpon>Advance_Salary_Scheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetails.Designer.cs">
+      <DependentUpon>EmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_account.Designer.cs">
+      <DependentUpon>employee_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_loan.Designer.cs">
+      <DependentUpon>employee_loan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_retirement_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_retirement_account.Designer.cs">
+      <DependentUpon>employee_retirement_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="function.cs" />
+    <Compile Include="Issue_Advance_Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue_Advance_Salary.Designer.cs">
+      <DependentUpon>Issue_Advance_Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issue_Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue_Salary.Designer.cs">
+      <DependentUpon>Issue_Salary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +187,18 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="medical_payment_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medical_payment_account.Designer.cs">
+      <DependentUpon>medical_payment_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="org_contribute_amount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="org_contribute_amount.Designer.cs">
+      <DependentUpon>org_contribute_amount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.cs">
@@ -81,11 +207,86 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setting.Designer.cs">
+      <DependentUpon>setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Employee.Designer.cs">
+      <DependentUpon>UC_Employee.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="account.resx">
+      <DependentUpon>account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_applicant.resx">
+      <DependentUpon>add_applicant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_basic_salary.resx">
+      <DependentUpon>add_basic_salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_bonus.resx">
+      <DependentUpon>add_bonus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_branch.resx">
+      <DependentUpon>add_branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_designation.resx">
+      <DependentUpon>add_designation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_installment.resx">
+      <DependentUpon>add_installment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_insurance_account.resx">
+      <DependentUpon>add_insurance_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_loan.resx">
+      <DependentUpon>add_loan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_scheme.resx">
+      <DependentUpon>add_scheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advance_Salary_Scheme.resx">
+      <DependentUpon>Advance_Salary_Scheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDetails.resx">
+      <DependentUpon>EmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_account.resx">
+      <DependentUpon>employee_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_loan.resx">
+      <DependentUpon>employee_loan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_retirement_account.resx">
+      <DependentUpon>employee_retirement_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue_Advance_Salary.resx">
+      <DependentUpon>Issue_Advance_Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue_Salary.resx">
+      <DependentUpon>Issue_Salary.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medical_payment_account.resx">
+      <DependentUpon>medical_payment_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="org_contribute_amount.resx">
+      <DependentUpon>org_contribute_amount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,6 +299,15 @@
     </Compile>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setting.resx">
+      <DependentUpon>setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Employee.resx">
+      <DependentUpon>UC_Employee.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
