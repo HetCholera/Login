@@ -47,7 +47,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnpayment = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -238,7 +238,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button6);
+            this.groupBox3.Controls.Add(this.btnpayment);
             this.groupBox3.Controls.Add(this.checkBox1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(244, 425);
@@ -248,16 +248,17 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Make Payment";
             // 
-            // button6
+            // btnpayment
             // 
-            this.button6.BackColor = System.Drawing.Color.Coral;
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button6.Location = new System.Drawing.Point(58, 29);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(162, 23);
-            this.button6.TabIndex = 60;
-            this.button6.Text = "Make Payment\r\n";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnpayment.BackColor = System.Drawing.Color.Coral;
+            this.btnpayment.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnpayment.Location = new System.Drawing.Point(58, 29);
+            this.btnpayment.Name = "btnpayment";
+            this.btnpayment.Size = new System.Drawing.Size(162, 23);
+            this.btnpayment.TabIndex = 60;
+            this.btnpayment.Text = "Make Payment\r\n";
+            this.btnpayment.UseVisualStyleBackColor = false;
+            this.btnpayment.Click += new System.EventHandler(this.btnpayment_Click);
             // 
             // checkBox1
             // 
@@ -267,6 +268,7 @@
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // button7
             // 
@@ -342,7 +344,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnpayment;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;

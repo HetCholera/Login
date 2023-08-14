@@ -35,5 +35,24 @@ namespace Login
         {
 
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked)
+            {
+                btnpayment.Enabled = true;
+            }
+            else
+            {
+                btnpayment.Enabled = false; 
+            }
+        }
+
+        private void btnpayment_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            retirement_payment retirement_Payment = new retirement_payment();
+            retirement_Payment.ShowDialog();
+        }
     }
 }
