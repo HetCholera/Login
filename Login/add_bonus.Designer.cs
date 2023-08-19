@@ -32,23 +32,23 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvbonus = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtdate = new System.Windows.Forms.DateTimePicker();
+            this.txtamount = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtstatus = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvbonus)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
@@ -94,14 +94,17 @@
             this.button4.TabIndex = 56;
             this.button4.Text = "Update";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // dataGridView1
+            // dgvbonus
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 243);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(737, 166);
-            this.dataGridView1.TabIndex = 55;
+            this.dgvbonus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvbonus.Location = new System.Drawing.Point(34, 243);
+            this.dgvbonus.Name = "dgvbonus";
+            this.dgvbonus.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvbonus.Size = new System.Drawing.Size(737, 166);
+            this.dgvbonus.TabIndex = 55;
+            this.dgvbonus.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvbonus_CellContentClick_1);
             // 
             // button2
             // 
@@ -112,6 +115,7 @@
             this.button2.TabIndex = 54;
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -123,20 +127,21 @@
             this.button1.TabIndex = 53;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dateTimePicker1
+            // txtdate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(280, 106);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(219, 20);
-            this.dateTimePicker1.TabIndex = 52;
+            this.txtdate.Location = new System.Drawing.Point(280, 106);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.Size = new System.Drawing.Size(219, 20);
+            this.txtdate.TabIndex = 52;
             // 
-            // textBox3
+            // txtamount
             // 
-            this.textBox3.Location = new System.Drawing.Point(280, 174);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(219, 20);
-            this.textBox3.TabIndex = 51;
+            this.txtamount.Location = new System.Drawing.Point(280, 174);
+            this.txtamount.Name = "txtamount";
+            this.txtamount.Size = new System.Drawing.Size(219, 20);
+            this.txtamount.TabIndex = 51;
             // 
             // label5
             // 
@@ -148,12 +153,12 @@
             this.label5.TabIndex = 50;
             this.label5.Text = "Amount";
             // 
-            // textBox2
+            // txtstatus
             // 
-            this.textBox2.Location = new System.Drawing.Point(280, 139);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 20);
-            this.textBox2.TabIndex = 49;
+            this.txtstatus.Location = new System.Drawing.Point(280, 139);
+            this.txtstatus.Name = "txtstatus";
+            this.txtstatus.Size = new System.Drawing.Size(219, 20);
+            this.txtstatus.TabIndex = 49;
             // 
             // label4
             // 
@@ -175,12 +180,12 @@
             this.label3.TabIndex = 47;
             this.label3.Text = "Date";
             // 
-            // textBox1
+            // txtname
             // 
-            this.textBox1.Location = new System.Drawing.Point(280, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 20);
-            this.textBox1.TabIndex = 46;
+            this.txtname.Location = new System.Drawing.Point(280, 74);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(219, 20);
+            this.txtname.TabIndex = 46;
             // 
             // label2
             // 
@@ -244,16 +249,16 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvbonus);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtdate);
+            this.Controls.Add(this.txtamount);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtstatus);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
@@ -264,7 +269,7 @@
             this.Name = "add_bonus";
             this.Text = "add_bonus";
             this.Load += new System.EventHandler(this.add_bonus_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvbonus)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,16 +281,16 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvbonus;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.DateTimePicker txtdate;
+        private System.Windows.Forms.TextBox txtamount;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtstatus;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;

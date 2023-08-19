@@ -26,5 +26,19 @@ namespace Login
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            account account = new account();    
+            account.ShowDialog();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Dispose(); 
+            Home home = new Home();
+            home.ShowDialog();
+        }
     }
 }

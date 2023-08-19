@@ -8,17 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Login
 {
+
     internal class function
     {
-        string constring = "";
-        SqlCommand cmd;
-        SqlConnection cn;
+        
+       /* string constring = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename|DataDirectory|Database1.mdf;Integrated Security=True";
+        public SqlCommand cmd;
         SqlDataAdapter da;
         SqlDataReader dr;
         DataTable dt;
+        public static SqlConnection cn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database1.mdf;Integrated Security=True");
 
         public string getmessage { get; set; }
 
@@ -41,7 +44,7 @@ namespace Login
             try
             {
                 cn.Close();
-                return true;
+                return true; 
             }
             catch(Exception)
             {
@@ -51,16 +54,17 @@ namespace Login
         public string InsertUpdateDelete(string query)
         {
             string ret = "";
-            string allquery=query.ToLower();
+            string allquery=query.ToLower();      
             
-           
+
             try
             {
+                
                 cmd.Connection = cn;
                 connect();
                 cmd.ExecuteNonQuery();
                 cmd.CommandText = query;
-                if (allquery.ToLower().Contains("insert into"))
+                if (allquery.ToLower().Contains("insert"))
                 {
                     ret = getmessage = "Inserted Successfully";
                 }
@@ -72,6 +76,7 @@ namespace Login
                 {
                     ret = getmessage = "Deleted Successfully";
                 }
+                
             }
             catch (Exception ex)
             {
@@ -86,6 +91,7 @@ namespace Login
             string strt;
             try
             {
+                cn.Open();
                 cmd.Connection = cn;
                 cmd.CommandText = query.ToLower();
                 connect();
@@ -103,8 +109,8 @@ namespace Login
             dt = null;
             return strt;
                 
-            
-        }
+   
+        }*/
     }
    
 }

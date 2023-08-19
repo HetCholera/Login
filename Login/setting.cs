@@ -26,7 +26,8 @@ namespace Login
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {          
+        {
+            this.Dispose();
             add_designation add_Designation = new add_designation();    
             add_Designation.ShowDialog();
 
@@ -34,14 +35,23 @@ namespace Login
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Dispose();
             add_branch add_branch = new add_branch();
             add_branch.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Dispose();
             add_bonus add_Bonus = new add_bonus();  
             add_Bonus.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        { 
+            this.Dispose();
+            add_allowance add_Allowance = new add_allowance();
+            add_Allowance.ShowDialog();
         }
     }
 }

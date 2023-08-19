@@ -72,6 +72,12 @@
     <Compile Include="account.Designer.cs">
       <DependentUpon>account.cs</DependentUpon>
     </Compile>
+    <Compile Include="add_allowance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_allowance.Designer.cs">
+      <DependentUpon>add_allowance.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_applicant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,7 @@
     <Compile Include="Advance_Salary_Scheme.Designer.cs">
       <DependentUpon>Advance_Salary_Scheme.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="employee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +240,9 @@
     </Compile>
     <EmbeddedResource Include="account.resx">
       <DependentUpon>account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_allowance.resx">
+      <DependentUpon>add_allowance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="add_applicant.resx">
       <DependentUpon>add_applicant.cs</DependentUpon>
