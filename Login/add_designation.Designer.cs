@@ -34,21 +34,22 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtstatus = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.txtsalary = new System.Windows.Forms.TextBox();
+            this.txtdate = new System.Windows.Forms.DateTimePicker();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.dgvdesignation = new System.Windows.Forms.DataGridView();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdesignation)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,12 +107,12 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Name";
             // 
-            // textBox1
+            // txtname
             // 
-            this.textBox1.Location = new System.Drawing.Point(281, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtname.Location = new System.Drawing.Point(281, 75);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(219, 20);
+            this.txtname.TabIndex = 6;
             // 
             // label3
             // 
@@ -133,12 +134,12 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Status";
             // 
-            // textBox2
+            // txtstatus
             // 
-            this.textBox2.Location = new System.Drawing.Point(281, 140);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 20);
-            this.textBox2.TabIndex = 9;
+            this.txtstatus.Location = new System.Drawing.Point(281, 140);
+            this.txtstatus.Name = "txtstatus";
+            this.txtstatus.Size = new System.Drawing.Size(219, 20);
+            this.txtstatus.TabIndex = 9;
             // 
             // label5
             // 
@@ -150,69 +151,75 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Salary";
             // 
-            // textBox3
+            // txtsalary
             // 
-            this.textBox3.Location = new System.Drawing.Point(281, 175);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(219, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtsalary.Location = new System.Drawing.Point(281, 175);
+            this.txtsalary.Name = "txtsalary";
+            this.txtsalary.Size = new System.Drawing.Size(219, 20);
+            this.txtsalary.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // txtdate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(281, 107);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(219, 20);
-            this.dateTimePicker1.TabIndex = 12;
+            this.txtdate.Location = new System.Drawing.Point(281, 107);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.Size = new System.Drawing.Size(219, 20);
+            this.txtdate.TabIndex = 12;
             // 
-            // button1
+            // btn_save
             // 
-            this.button1.BackColor = System.Drawing.Color.Coral;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(293, 204);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_save.BackColor = System.Drawing.Color.Coral;
+            this.btn_save.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_save.Location = new System.Drawing.Point(293, 204);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(75, 23);
+            this.btn_save.TabIndex = 13;
+            this.btn_save.Text = "Save";
+            this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
-            // button2
+            // btn_clear
             // 
-            this.button2.BackColor = System.Drawing.Color.Coral;
-            this.button2.Location = new System.Drawing.Point(390, 204);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(73, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_clear.BackColor = System.Drawing.Color.Coral;
+            this.btn_clear.Location = new System.Drawing.Point(390, 204);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(73, 23);
+            this.btn_clear.TabIndex = 14;
+            this.btn_clear.Text = "Clear";
+            this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
-            // dataGridView1
+            // dgvdesignation
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 244);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(737, 166);
-            this.dataGridView1.TabIndex = 15;
+            this.dgvdesignation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvdesignation.Location = new System.Drawing.Point(35, 244);
+            this.dgvdesignation.Name = "dgvdesignation";
+            this.dgvdesignation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvdesignation.Size = new System.Drawing.Size(737, 166);
+            this.dgvdesignation.TabIndex = 15;
+            this.dgvdesignation.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdesignation_CellContentClick);
             // 
-            // button3
+            // btn_delete
             // 
-            this.button3.BackColor = System.Drawing.Color.Coral;
-            this.button3.Location = new System.Drawing.Point(701, 412);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(73, 23);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_delete.BackColor = System.Drawing.Color.Coral;
+            this.btn_delete.Location = new System.Drawing.Point(701, 412);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(73, 23);
+            this.btn_delete.TabIndex = 17;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
-            // button4
+            // btn_update
             // 
-            this.button4.BackColor = System.Drawing.Color.Coral;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button4.Location = new System.Drawing.Point(604, 412);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Update";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_update.BackColor = System.Drawing.Color.Coral;
+            this.btn_update.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_update.Location = new System.Drawing.Point(604, 412);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(75, 23);
+            this.btn_update.TabIndex = 16;
+            this.btn_update.Text = "Update";
+            this.btn_update.UseVisualStyleBackColor = false;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // button5
             // 
@@ -237,25 +244,35 @@
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(520, 127);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "label6";
+            // 
             // add_designation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_update);
+            this.Controls.Add(this.dgvdesignation);
+            this.Controls.Add(this.btn_clear);
+            this.Controls.Add(this.btn_save);
+            this.Controls.Add(this.txtdate);
+            this.Controls.Add(this.txtsalary);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtstatus);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
@@ -267,7 +284,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "add_designation";
             this.Load += new System.EventHandler(this.add_designation_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdesignation)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,19 +298,20 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtstatus;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txtsalary;
+        private System.Windows.Forms.DateTimePicker txtdate;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.DataGridView dgvdesignation;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label6;
     }
 }

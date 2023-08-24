@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -101,6 +101,12 @@
     </Compile>
     <Compile Include="add_branch.Designer.cs">
       <DependentUpon>add_branch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_category.Designer.cs">
+      <DependentUpon>add_category.cs</DependentUpon>
     </Compile>
     <Compile Include="add_designation.cs">
       <SubType>Form</SubType>
@@ -256,6 +262,9 @@
     <EmbeddedResource Include="add_branch.resx">
       <DependentUpon>add_branch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="add_category.resx">
+      <DependentUpon>add_category.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add_designation.resx">
       <DependentUpon>add_designation.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,15 +351,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\Database1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Debug\Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -361,6 +361,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

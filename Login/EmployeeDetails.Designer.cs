@@ -52,10 +52,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.btn_upload = new System.Windows.Forms.Button();
+            this.pic = new System.Windows.Forms.PictureBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -74,25 +74,25 @@
             this.label17 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtcnicno = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtphone = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmb_gender = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtfathername = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmb_branch_code = new System.Windows.Forms.ComboBox();
+            this.txtname = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -331,41 +331,41 @@
             this.label16.TabIndex = 121;
             this.label16.Text = "Employee Details";
             // 
-            // button3
+            // btn_clear
             // 
-            this.button3.Location = new System.Drawing.Point(659, 307);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 23);
-            this.button3.TabIndex = 120;
-            this.button3.Text = "Clear";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_clear.Location = new System.Drawing.Point(659, 307);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(82, 23);
+            this.btn_clear.TabIndex = 120;
+            this.btn_clear.Text = "Clear";
+            this.btn_clear.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_save
             // 
-            this.button2.Location = new System.Drawing.Point(578, 307);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 23);
-            this.button2.TabIndex = 119;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_save.Location = new System.Drawing.Point(578, 307);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(82, 23);
+            this.btn_save.TabIndex = 119;
+            this.btn_save.Text = "Save";
+            this.btn_save.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_upload
             // 
-            this.button4.Location = new System.Drawing.Point(910, 257);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(82, 23);
-            this.button4.TabIndex = 118;
-            this.button4.Text = "Upload";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_upload.Location = new System.Drawing.Point(910, 257);
+            this.btn_upload.Name = "btn_upload";
+            this.btn_upload.Size = new System.Drawing.Size(82, 23);
+            this.btn_upload.TabIndex = 118;
+            this.btn_upload.Text = "Upload";
+            this.btn_upload.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // pic
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(883, 99);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 138);
-            this.pictureBox1.TabIndex = 117;
-            this.pictureBox1.TabStop = false;
+            this.pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic.Location = new System.Drawing.Point(883, 99);
+            this.pic.Name = "pic";
+            this.pic.Size = new System.Drawing.Size(121, 138);
+            this.pic.TabIndex = 117;
+            this.pic.TabStop = false;
             // 
             // dateTimePicker2
             // 
@@ -514,12 +514,12 @@
             this.label18.TabIndex = 99;
             this.label18.Text = "Personal Designation";
             // 
-            // textBox4
+            // txtcnicno
             // 
-            this.textBox4.Location = new System.Drawing.Point(334, 236);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(175, 20);
-            this.textBox4.TabIndex = 98;
+            this.txtcnicno.Location = new System.Drawing.Point(334, 236);
+            this.txtcnicno.Name = "txtcnicno";
+            this.txtcnicno.Size = new System.Drawing.Size(175, 20);
+            this.txtcnicno.TabIndex = 98;
             // 
             // label19
             // 
@@ -530,12 +530,12 @@
             this.label19.TabIndex = 97;
             this.label19.Text = "CNIC NO";
             // 
-            // textBox3
+            // txtphone
             // 
-            this.textBox3.Location = new System.Drawing.Point(334, 210);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(175, 20);
-            this.textBox3.TabIndex = 96;
+            this.txtphone.Location = new System.Drawing.Point(334, 210);
+            this.txtphone.Name = "txtphone";
+            this.txtphone.Size = new System.Drawing.Size(175, 20);
+            this.txtphone.TabIndex = 96;
             // 
             // label20
             // 
@@ -546,13 +546,17 @@
             this.label20.TabIndex = 95;
             this.label20.Text = "Phone Number";
             // 
-            // comboBox2
+            // cmb_gender
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(334, 183);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(175, 21);
-            this.comboBox2.TabIndex = 94;
+            this.cmb_gender.FormattingEnabled = true;
+            this.cmb_gender.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.cmb_gender.Location = new System.Drawing.Point(334, 183);
+            this.cmb_gender.Name = "cmb_gender";
+            this.cmb_gender.Size = new System.Drawing.Size(175, 21);
+            this.cmb_gender.TabIndex = 94;
             // 
             // label21
             // 
@@ -563,12 +567,12 @@
             this.label21.TabIndex = 93;
             this.label21.Text = "Gender";
             // 
-            // textBox2
+            // txtfathername
             // 
-            this.textBox2.Location = new System.Drawing.Point(334, 157);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 20);
-            this.textBox2.TabIndex = 92;
+            this.txtfathername.Location = new System.Drawing.Point(334, 157);
+            this.txtfathername.Name = "txtfathername";
+            this.txtfathername.Size = new System.Drawing.Size(175, 20);
+            this.txtfathername.TabIndex = 92;
             // 
             // label22
             // 
@@ -588,20 +592,20 @@
             this.label23.TabIndex = 90;
             this.label23.Text = "Name";
             // 
-            // comboBox1
+            // cmb_branch_code
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(334, 104);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(175, 21);
-            this.comboBox1.TabIndex = 89;
+            this.cmb_branch_code.FormattingEnabled = true;
+            this.cmb_branch_code.Location = new System.Drawing.Point(334, 104);
+            this.cmb_branch_code.Name = "cmb_branch_code";
+            this.cmb_branch_code.Size = new System.Drawing.Size(175, 21);
+            this.cmb_branch_code.TabIndex = 89;
             // 
-            // textBox1
+            // txtname
             // 
-            this.textBox1.Location = new System.Drawing.Point(334, 131);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 20);
-            this.textBox1.TabIndex = 88;
+            this.txtname.Location = new System.Drawing.Point(334, 131);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(175, 20);
+            this.txtname.TabIndex = 88;
             // 
             // label24
             // 
@@ -621,14 +625,14 @@
             this.button5.Text = "Edit";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // btn_update
             // 
-            this.button16.Location = new System.Drawing.Point(588, 484);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(94, 23);
-            this.button16.TabIndex = 124;
-            this.button16.Text = "Update";
-            this.button16.UseVisualStyleBackColor = true;
+            this.btn_update.Location = new System.Drawing.Point(588, 484);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(94, 23);
+            this.btn_update.TabIndex = 124;
+            this.btn_update.Text = "Update";
+            this.btn_update.UseVisualStyleBackColor = true;
             // 
             // button17
             // 
@@ -654,14 +658,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 591);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.btn_update);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btn_clear);
+            this.Controls.Add(this.btn_save);
+            this.Controls.Add(this.btn_upload);
+            this.Controls.Add(this.pic);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -680,17 +684,17 @@
             this.Controls.Add(this.label17);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtcnicno);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtphone);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmb_gender);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtfathername);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmb_branch_code);
+            this.Controls.Add(this.txtname);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button7);
@@ -713,7 +717,7 @@
             this.Text = "EmployeeDetails";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -743,10 +747,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_upload;
+        private System.Windows.Forms.PictureBox pic;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
@@ -765,20 +769,20 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtcnicno;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtphone;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmb_gender;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtfathername;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmb_branch_code;
+        private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
     }

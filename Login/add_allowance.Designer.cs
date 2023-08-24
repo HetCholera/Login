@@ -48,6 +48,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvallow)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,6 +85,7 @@
             this.btndelete.TabIndex = 57;
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // btnupdate
             // 
@@ -95,14 +97,17 @@
             this.btnupdate.TabIndex = 56;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // dgvallow
             // 
             this.dgvallow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvallow.Location = new System.Drawing.Point(34, 243);
             this.dgvallow.Name = "dgvallow";
+            this.dgvallow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvallow.Size = new System.Drawing.Size(737, 166);
             this.dgvallow.TabIndex = 55;
+            this.dgvallow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvallow_CellContentClick);
             // 
             // btnclear
             // 
@@ -113,6 +118,7 @@
             this.btnclear.TabIndex = 54;
             this.btnclear.Text = "Clear";
             this.btnclear.UseVisualStyleBackColor = false;
+            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // btnsave
             // 
@@ -237,11 +243,21 @@
             this.panel1.Size = new System.Drawing.Size(803, 12);
             this.panel1.TabIndex = 40;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(519, 122);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 60;
+            this.label6.Text = "label6";
+            // 
             // add_allowance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btndelete);
@@ -294,5 +310,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
     }
 }

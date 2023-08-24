@@ -53,5 +53,12 @@ namespace Login
             add_allowance add_Allowance = new add_allowance();
             add_Allowance.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            add_category add_category = new add_category();
+            add_category.ShowDialog();
+        }
     }
 }

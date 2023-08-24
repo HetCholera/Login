@@ -48,6 +48,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvbranch)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,6 +84,7 @@
             this.button3.TabIndex = 37;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -94,15 +96,17 @@
             this.button4.TabIndex = 36;
             this.button4.Text = "Update";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dgvbranch
             // 
             this.dgvbranch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvbranch.Location = new System.Drawing.Point(34, 243);
             this.dgvbranch.Name = "dgvbranch";
+            this.dgvbranch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvbranch.Size = new System.Drawing.Size(737, 166);
             this.dgvbranch.TabIndex = 35;
-            this.dgvbranch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvbranch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvbranch_CellContentClick);
             // 
             // button2
             // 
@@ -237,11 +241,21 @@
             this.panel1.Size = new System.Drawing.Size(803, 12);
             this.panel1.TabIndex = 20;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(549, 121);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "label6";
+            // 
             // add_branch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
@@ -294,5 +308,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
     }
 }
