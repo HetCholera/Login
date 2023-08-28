@@ -114,6 +114,12 @@
     <Compile Include="add_designation.Designer.cs">
       <DependentUpon>add_designation.cs</DependentUpon>
     </Compile>
+    <Compile Include="add_functional_designation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_functional_designation.Designer.cs">
+      <DependentUpon>add_functional_designation.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_installment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="add_designation.resx">
       <DependentUpon>add_designation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_functional_designation.resx">
+      <DependentUpon>add_functional_designation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="add_installment.resx">
       <DependentUpon>add_installment.cs</DependentUpon>

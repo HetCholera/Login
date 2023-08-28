@@ -25,6 +25,8 @@ namespace Login
         private void button6_Click(object sender, EventArgs e)
         {
             this.Dispose();
+            setting setting = new setting();
+            setting.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)

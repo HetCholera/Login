@@ -110,6 +110,7 @@ namespace Login
             da.Fill(dt);
             MessageBox.Show(cls1.InsertUpdateDelete(ins), "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
             clear();
+            loaddata();
 
             /*  string insert = "insert into tbl_bonus values('" + txtname.Text+ "','"+txtdate.Text+ "','"+txtstatus.Text+ "','"+txtamount.Text+"')";
               MessageBox.Show(fn.InsertUpdateDelete(insert), "Save Record",MessageBoxButtons.OK,MessageBoxIcon.Information);
@@ -122,7 +123,7 @@ namespace Login
 
         private void clear()
         {
-            txtname.Text = txtdate.Text = txtstatus.Text = txtamount.Text = string.Empty;
+            txtname.Text = txtstatus.Text = txtamount.Text = string.Empty;
             txtname.Focus();
         }
     }

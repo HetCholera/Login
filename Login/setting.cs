@@ -60,5 +60,12 @@ namespace Login
             add_category add_category = new add_category();
             add_category.ShowDialog();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            add_functional_designation add_Functional_Designation = new add_functional_designation();   
+            add_Functional_Designation.ShowDialog();
+        }
     }
 }

@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 using System.Data.Sql;
 using System.Windows.Forms;
 using System.Data;
+using System.Xml.Linq;
 
 namespace Login
 {
     internal class Class1
     {
-        
+
         public static SqlConnection cn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database1.mdf;Integrated Security=True");
         public string getmessage { get; set; }
         public string InsertUpdateDelete(string query)
@@ -54,8 +55,51 @@ namespace Login
                 return false;
             }
         }
-       
+       /* public string getSingleValueAsArraybyIndex(string query, out List<string> columndata, int index)
+        {
+            List<string> data = new List<string>();
+            string ret;
+            SqlDataReader myreader;
+            try
+            {
+                
+                while(myreader.Read())
+                {
+                    data.Add();
+                }
+            }
 
+        }
+        public void fillcombox(string query, ComboBox cmb)
+        {
+            int i = 0;
+            List<string> list = new List<string>();
+            getSingleValueAsArraybyIndex(query, out list, 0);
+            foreach (string val in list)
+            {
+                if (val.Length > 0)
+                {
+                    cmb.Items.Add(val);
+                    i++;
+                }
+            }
+            if (i > 0)
+            {
+                cmb.SelectedIndex = i;
+            }
+        }*/
+      /* public getsinglevaluesinglecolumn(string query,out string columndata,int index)
+        {
+            string ret = null;
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                
+            }
+        }*/
     }
-   
+    
 }

@@ -357,6 +357,7 @@
             this.btn_upload.TabIndex = 118;
             this.btn_upload.Text = "Upload";
             this.btn_upload.UseVisualStyleBackColor = true;
+            this.btn_upload.Click += new System.EventHandler(this.btn_upload_Click);
             // 
             // pic
             // 
@@ -715,6 +716,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EmployeeDetails";
             this.Text = "EmployeeDetails";
+            this.Load += new System.EventHandler(this.EmployeeDetails_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
