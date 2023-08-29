@@ -19,7 +19,6 @@ namespace Login
     {
         int rowcount, recordposition = -1;
         Class1 cls1 = new Class1();
-       
       
         public add_bonus()
         {

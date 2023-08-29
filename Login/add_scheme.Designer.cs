@@ -367,6 +367,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "add_scheme";
             this.Text = "add_scheme";
+            this.Load += new System.EventHandler(this.add_scheme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
