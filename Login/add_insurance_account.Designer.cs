@@ -33,12 +33,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.dgvinsuranceaccount = new System.Windows.Forms.DataGridView();
+            this.btnclear = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.txtdate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,10 +46,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtempno = new System.Windows.Forms.TextBox();
+            this.txtsalaryinsuranceamount = new System.Windows.Forms.TextBox();
+            this.txtorgcontriamount = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvinsuranceaccount)).BeginInit();
             this.SuspendLayout();
             // 
             // button7
@@ -107,62 +108,66 @@
             this.button5.Text = "Edit";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btndelete
             // 
-            this.button3.BackColor = System.Drawing.Color.Coral;
-            this.button3.Location = new System.Drawing.Point(700, 411);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(73, 23);
-            this.button3.TabIndex = 106;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btndelete.BackColor = System.Drawing.Color.Coral;
+            this.btndelete.Location = new System.Drawing.Point(700, 411);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(73, 23);
+            this.btndelete.TabIndex = 106;
+            this.btndelete.Text = "Delete";
+            this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
-            // button4
+            // btnupdate
             // 
-            this.button4.BackColor = System.Drawing.Color.Coral;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button4.Location = new System.Drawing.Point(603, 411);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 105;
-            this.button4.Text = "Update";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnupdate.BackColor = System.Drawing.Color.Coral;
+            this.btnupdate.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnupdate.Location = new System.Drawing.Point(603, 411);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(75, 23);
+            this.btnupdate.TabIndex = 105;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
-            // dataGridView1
+            // dgvinsuranceaccount
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 177);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(737, 232);
-            this.dataGridView1.TabIndex = 104;
+            this.dgvinsuranceaccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvinsuranceaccount.Location = new System.Drawing.Point(34, 177);
+            this.dgvinsuranceaccount.Name = "dgvinsuranceaccount";
+            this.dgvinsuranceaccount.Size = new System.Drawing.Size(737, 232);
+            this.dgvinsuranceaccount.TabIndex = 104;
+            this.dgvinsuranceaccount.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvinsuranceaccount_CellContentClick);
             // 
-            // button2
+            // btnclear
             // 
-            this.button2.BackColor = System.Drawing.Color.Coral;
-            this.button2.Location = new System.Drawing.Point(696, 148);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(73, 23);
-            this.button2.TabIndex = 103;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnclear.BackColor = System.Drawing.Color.Coral;
+            this.btnclear.Location = new System.Drawing.Point(696, 148);
+            this.btnclear.Name = "btnclear";
+            this.btnclear.Size = new System.Drawing.Size(73, 23);
+            this.btnclear.TabIndex = 103;
+            this.btnclear.Text = "Clear";
+            this.btnclear.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnsave
             // 
-            this.button1.BackColor = System.Drawing.Color.Coral;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(598, 148);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 102;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnsave.BackColor = System.Drawing.Color.Coral;
+            this.btnsave.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnsave.Location = new System.Drawing.Point(598, 148);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(75, 23);
+            this.btnsave.TabIndex = 102;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
-            // dateTimePicker1
+            // txtdate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(159, 106);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(219, 20);
-            this.dateTimePicker1.TabIndex = 101;
+            this.txtdate.Location = new System.Drawing.Point(159, 106);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.Size = new System.Drawing.Size(219, 20);
+            this.txtdate.TabIndex = 101;
             // 
             // label3
             // 
@@ -227,46 +232,56 @@
             this.panel1.Size = new System.Drawing.Size(803, 12);
             this.panel1.TabIndex = 90;
             // 
-            // textBox1
+            // txtempno
             // 
-            this.textBox1.Location = new System.Drawing.Point(159, 80);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 20);
-            this.textBox1.TabIndex = 117;
+            this.txtempno.Location = new System.Drawing.Point(159, 80);
+            this.txtempno.Name = "txtempno";
+            this.txtempno.Size = new System.Drawing.Size(219, 20);
+            this.txtempno.TabIndex = 117;
             // 
-            // textBox2
+            // txtsalaryinsuranceamount
             // 
-            this.textBox2.Location = new System.Drawing.Point(598, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 20);
-            this.textBox2.TabIndex = 118;
+            this.txtsalaryinsuranceamount.Location = new System.Drawing.Point(598, 77);
+            this.txtsalaryinsuranceamount.Name = "txtsalaryinsuranceamount";
+            this.txtsalaryinsuranceamount.Size = new System.Drawing.Size(183, 20);
+            this.txtsalaryinsuranceamount.TabIndex = 118;
             // 
-            // textBox3
+            // txtorgcontriamount
             // 
-            this.textBox3.Location = new System.Drawing.Point(598, 103);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 20);
-            this.textBox3.TabIndex = 119;
+            this.txtorgcontriamount.Location = new System.Drawing.Point(598, 103);
+            this.txtorgcontriamount.Name = "txtorgcontriamount";
+            this.txtorgcontriamount.Size = new System.Drawing.Size(183, 20);
+            this.txtorgcontriamount.TabIndex = 119;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(112, 139);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 120;
+            this.label4.Text = "label4";
             // 
             // add_insurance_account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtorgcontriamount);
+            this.Controls.Add(this.txtsalaryinsuranceamount);
+            this.Controls.Add(this.txtempno);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btndelete);
+            this.Controls.Add(this.btnupdate);
+            this.Controls.Add(this.dgvinsuranceaccount);
+            this.Controls.Add(this.btnclear);
+            this.Controls.Add(this.btnsave);
+            this.Controls.Add(this.txtdate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -277,7 +292,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "add_insurance_account";
             this.Text = "add_insurance_account";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.add_insurance_account_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvinsuranceaccount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,12 +306,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.DataGridView dgvinsuranceaccount;
+        private System.Windows.Forms.Button btnclear;
+        private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.DateTimePicker txtdate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -303,8 +319,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtempno;
+        private System.Windows.Forms.TextBox txtsalaryinsuranceamount;
+        private System.Windows.Forms.TextBox txtorgcontriamount;
+        private System.Windows.Forms.Label label4;
     }
 }
