@@ -56,20 +56,20 @@
             this.btn_save = new System.Windows.Forms.Button();
             this.btn_upload = new System.Windows.Forms.Button();
             this.pic = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.txtjoindate = new System.Windows.Forms.DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtstatus = new System.Windows.Forms.TextBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtaddress = new System.Windows.Forms.TextBox();
+            this.txtdob = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtempno = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtbps = new System.Windows.Forms.TextBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -90,9 +90,11 @@
             this.btn_update = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
+            this.dgvempdetails = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvempdetails)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -348,6 +350,7 @@
             this.btn_save.TabIndex = 119;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // btn_upload
             // 
@@ -368,12 +371,12 @@
             this.pic.TabIndex = 117;
             this.pic.TabStop = false;
             // 
-            // dateTimePicker2
+            // txtjoindate
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(649, 269);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(175, 20);
-            this.dateTimePicker2.TabIndex = 116;
+            this.txtjoindate.Location = new System.Drawing.Point(649, 269);
+            this.txtjoindate.Name = "txtjoindate";
+            this.txtjoindate.Size = new System.Drawing.Size(175, 20);
+            this.txtjoindate.TabIndex = 116;
             // 
             // label15
             // 
@@ -393,12 +396,12 @@
             this.label14.TabIndex = 114;
             this.label14.Text = "Status";
             // 
-            // textBox8
+            // txtstatus
             // 
-            this.textBox8.Location = new System.Drawing.Point(649, 243);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(175, 20);
-            this.textBox8.TabIndex = 113;
+            this.txtstatus.Location = new System.Drawing.Point(649, 243);
+            this.txtstatus.Name = "txtstatus";
+            this.txtstatus.Size = new System.Drawing.Size(175, 20);
+            this.txtstatus.TabIndex = 113;
             // 
             // comboBox5
             // 
@@ -426,19 +429,19 @@
             this.label12.TabIndex = 110;
             this.label12.Text = "Address";
             // 
-            // textBox7
+            // txtaddress
             // 
-            this.textBox7.Location = new System.Drawing.Point(649, 185);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(175, 20);
-            this.textBox7.TabIndex = 109;
+            this.txtaddress.Location = new System.Drawing.Point(649, 185);
+            this.txtaddress.Name = "txtaddress";
+            this.txtaddress.Size = new System.Drawing.Size(175, 20);
+            this.txtaddress.TabIndex = 109;
             // 
-            // dateTimePicker1
+            // txtdob
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(649, 157);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(175, 20);
-            this.dateTimePicker1.TabIndex = 108;
+            this.txtdob.Location = new System.Drawing.Point(649, 157);
+            this.txtdob.Name = "txtdob";
+            this.txtdob.Size = new System.Drawing.Size(175, 20);
+            this.txtdob.TabIndex = 108;
             // 
             // label11
             // 
@@ -458,12 +461,12 @@
             this.label10.TabIndex = 106;
             this.label10.Text = "Employee No";
             // 
-            // textBox6
+            // txtempno
             // 
-            this.textBox6.Location = new System.Drawing.Point(649, 130);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(175, 20);
-            this.textBox6.TabIndex = 105;
+            this.txtempno.Location = new System.Drawing.Point(649, 130);
+            this.txtempno.Name = "txtempno";
+            this.txtempno.Size = new System.Drawing.Size(175, 20);
+            this.txtempno.TabIndex = 105;
             // 
             // label9
             // 
@@ -474,12 +477,12 @@
             this.label9.TabIndex = 104;
             this.label9.Text = "BPS";
             // 
-            // textBox5
+            // txtbps
             // 
-            this.textBox5.Location = new System.Drawing.Point(649, 101);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(175, 20);
-            this.textBox5.TabIndex = 103;
+            this.txtbps.Location = new System.Drawing.Point(649, 101);
+            this.txtbps.Name = "txtbps";
+            this.txtbps.Size = new System.Drawing.Size(175, 20);
+            this.txtbps.TabIndex = 103;
             // 
             // comboBox4
             // 
@@ -653,11 +656,20 @@
             this.button18.Text = "Add Reference";
             this.button18.UseVisualStyleBackColor = true;
             // 
+            // dgvempdetails
+            // 
+            this.dgvempdetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvempdetails.Location = new System.Drawing.Point(224, 331);
+            this.dgvempdetails.Name = "dgvempdetails";
+            this.dgvempdetails.Size = new System.Drawing.Size(824, 150);
+            this.dgvempdetails.TabIndex = 126;
+            // 
             // EmployeeDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 591);
+            this.Controls.Add(this.dgvempdetails);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.button17);
@@ -667,20 +679,20 @@
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_upload);
             this.Controls.Add(this.pic);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.txtjoindate);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtstatus);
             this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtaddress);
+            this.Controls.Add(this.txtdob);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtempno);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtbps);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.comboBox3);
@@ -720,6 +732,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvempdetails)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -753,20 +766,20 @@
         private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.Button btn_upload;
         private System.Windows.Forms.PictureBox pic;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker txtjoindate;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtstatus;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtaddress;
+        private System.Windows.Forms.DateTimePicker txtdob;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtempno;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtbps;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ComboBox comboBox3;
@@ -787,5 +800,6 @@
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.DataGridView dgvempdetails;
     }
 }

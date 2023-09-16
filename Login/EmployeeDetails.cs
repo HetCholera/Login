@@ -69,6 +69,18 @@ namespace Login
             }
         }
 
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            string ins = "insert into tbl_emp_details(branch_code,emp_name,father_name,gender,phone_number,cnic_no,personal_Designation,functional_designation,bps,emp_no,dob,address,category,status,join_date)values('" + cmb_branch_code.Text + "','" + txtname.Text + "','" + txtfathername.Text + "','" + cmb_gender.Text + "','" +txtphone.Text + "','" + txtcnicno.Text + "','" + comboBox3.Text + "','" + comboBox4.Text + "','" + txtbps.Text + "','" + txtempno.Text + "','" + txtdob.Text + "','" + txtaddress.Text + "','"+ comboBox5.Text+"','"+ txtstatus.Text + "','"+ txtjoindate .Text+ "')";
+            SqlDataAdapter da = new SqlDataAdapter(ins, Class1.cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            MessageBox.Show(cls1.InsertUpdateDelete(ins), "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            cls1.InsertUpdateDelete(ins);
+            clear();
+            loaddata();
+        }
+
         private void button9_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -84,32 +96,74 @@ namespace Login
             SqlDataAdapter da = new SqlDataAdapter(sql, Class1.cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
-           // FillCombobox(branch_code, cmb_branch_code);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                cmb_branch_code.Items.Add(dt.Rows[i][0].ToString());
+            }
 
-           
+            // FillCombobox(branch_code, cmb_branch_code);
+            string sl = "select designation_name from tbl_designation";
+            SqlDataAdapter d = new SqlDataAdapter(sl, Class1.cn);
+            DataTable dat = new DataTable();
+            d.Fill(dat);
+            for (int i = 0; i < dat.Rows.Count; i++)
+            {
+                comboBox3.Items.Add(dat.Rows[i][0].ToString());
+            }
+            string fd = "select fun_name from tbl_functional_designation";
+            SqlDataAdapter dap = new SqlDataAdapter(fd, Class1.cn);
+            DataTable dtb = new DataTable();
+            dap.Fill(dtb);
+            for (int i = 0; i < dtb.Rows.Count; i++)
+            {
+                comboBox4.Items.Add(dtb.Rows[i][0].ToString());
+            }
+            string cat = "select cate_name from tbl_category";
+            SqlDataAdapter aca = new SqlDataAdapter(cat, Class1.cn);
+            DataTable cadt = new DataTable();
+            aca.Fill(cadt);
+            for (int i = 0; i < cadt.Rows.Count; i++)
+            {
+                comboBox5.Items.Add(cadt.Rows[i][0].ToString());
+            }
+
         }
-      /*  public void FillCombobox()
+        private void loaddata()
         {
-
-            string sql = "select branch_code from tbl_branch";
+            string sql = "select * from tbl_emp_details";
             SqlDataAdapter da = new SqlDataAdapter(sql, Class1.cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
+            rowcount = dt.Rows.Count;
+            dgvempdetails.DataSource = dt;
+        }
+        private void clear()
+        {
+            cmb_branch_code.Text = txtname.Text = txtfathername.Text = cmb_gender.Text = txtphone.Text = txtcnicno.Text = comboBox3.Text = comboBox4.Text = txtbps.Text = txtempno.Text = txtdob.Text = txtaddress.Text = comboBox5.Text = txtstatus.Text = txtjoindate.Text = string.Empty;
+            txtempno.Focus();
+        }
+        /*  public void FillCombobox()
+          {
 
-            SqlDataReader myreader;
-            try
-            {
-                
-                while (myreader.Read())
-                {
-                    string cname = myreader.GetString(1);
-                    cmb_branch_code.Items.Add(branchcode);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Cannot open connection ! ");
-            }
-        }*/
+              string sql = "select branch_code from tbl_branch";
+              SqlDataAdapter da = new SqlDataAdapter(sql, Class1.cn);
+              DataTable dt = new DataTable();
+              da.Fill(dt);
+
+              SqlDataReader myreader;
+              try
+              {
+
+                  while (myreader.Read())
+                  {
+                      string cname = myreader.GetString(1);
+                      cmb_branch_code.Items.Add(branchcode);
+                  }
+              }
+              catch (Exception ex)
+              {
+                  MessageBox.Show("Cannot open connection ! ");
+              }
+          }*/
     }
 }
