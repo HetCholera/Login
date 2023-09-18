@@ -30,8 +30,6 @@
         {
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
@@ -42,7 +40,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txttotalamt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,14 +49,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbasicsalaryamount = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtamount = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtadvdeduc = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtattandancededuc = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -82,23 +80,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(219, 21);
             this.comboBox1.TabIndex = 112;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(532, 106);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(219, 20);
-            this.textBox6.TabIndex = 111;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(448, 106);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 16);
-            this.label8.TabIndex = 110;
-            this.label8.Text = "Amount";
             // 
             // label7
             // 
@@ -195,17 +176,17 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(532, 138);
+            this.dateTimePicker1.Location = new System.Drawing.Point(532, 106);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(219, 20);
             this.dateTimePicker1.TabIndex = 100;
             // 
-            // textBox3
+            // txttotalamt
             // 
-            this.textBox3.Location = new System.Drawing.Point(159, 218);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(219, 20);
-            this.textBox3.TabIndex = 99;
+            this.txttotalamt.Location = new System.Drawing.Point(159, 218);
+            this.txttotalamt.Name = "txttotalamt";
+            this.txttotalamt.Size = new System.Drawing.Size(219, 20);
+            this.txttotalamt.TabIndex = 99;
             // 
             // label5
             // 
@@ -221,7 +202,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(488, 138);
+            this.label3.Location = new System.Drawing.Point(488, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 16);
             this.label3.TabIndex = 95;
@@ -280,12 +261,12 @@
             this.panel1.Size = new System.Drawing.Size(803, 12);
             this.panel1.TabIndex = 89;
             // 
-            // textBox1
+            // txtbasicsalaryamount
             // 
-            this.textBox1.Location = new System.Drawing.Point(159, 105);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 20);
-            this.textBox1.TabIndex = 115;
+            this.txtbasicsalaryamount.Location = new System.Drawing.Point(159, 105);
+            this.txtbasicsalaryamount.Name = "txtbasicsalaryamount";
+            this.txtbasicsalaryamount.Size = new System.Drawing.Size(219, 20);
+            this.txtbasicsalaryamount.TabIndex = 115;
             // 
             // comboBox2
             // 
@@ -295,12 +276,12 @@
             this.comboBox2.Size = new System.Drawing.Size(219, 21);
             this.comboBox2.TabIndex = 119;
             // 
-            // textBox4
+            // txtamount
             // 
-            this.textBox4.Location = new System.Drawing.Point(159, 165);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(219, 20);
-            this.textBox4.TabIndex = 118;
+            this.txtamount.Location = new System.Drawing.Point(159, 165);
+            this.txtamount.Name = "txtamount";
+            this.txtamount.Size = new System.Drawing.Size(219, 20);
+            this.txtamount.TabIndex = 118;
             // 
             // label9
             // 
@@ -322,29 +303,29 @@
             this.label10.TabIndex = 116;
             this.label10.Text = "Bonus Name";
             // 
-            // textBox5
+            // txtadvdeduc
             // 
-            this.textBox5.Location = new System.Drawing.Point(532, 165);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(219, 20);
-            this.textBox5.TabIndex = 121;
+            this.txtadvdeduc.Location = new System.Drawing.Point(532, 133);
+            this.txtadvdeduc.Name = "txtadvdeduc";
+            this.txtadvdeduc.Size = new System.Drawing.Size(219, 20);
+            this.txtadvdeduc.TabIndex = 121;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(407, 165);
+            this.label11.Location = new System.Drawing.Point(407, 133);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(125, 16);
             this.label11.TabIndex = 120;
             this.label11.Text = "Advance Deduction";
             // 
-            // textBox7
+            // txtattandancededuc
             // 
-            this.textBox7.Location = new System.Drawing.Point(159, 191);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(219, 20);
-            this.textBox7.TabIndex = 123;
+            this.txtattandancededuc.Location = new System.Drawing.Point(159, 191);
+            this.txtattandancededuc.Name = "txtattandancededuc";
+            this.txtattandancededuc.Size = new System.Drawing.Size(219, 20);
+            this.txtattandancededuc.TabIndex = 123;
             // 
             // label12
             // 
@@ -360,7 +341,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(405, 195);
+            this.label13.Location = new System.Drawing.Point(405, 163);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(125, 16);
             this.label13.TabIndex = 124;
@@ -369,7 +350,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(532, 195);
+            this.radioButton1.Location = new System.Drawing.Point(532, 163);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(46, 17);
             this.radioButton1.TabIndex = 125;
@@ -380,7 +361,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(629, 195);
+            this.radioButton2.Location = new System.Drawing.Point(629, 163);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(60, 17);
             this.radioButton2.TabIndex = 126;
@@ -409,19 +390,17 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtattandancededuc);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtadvdeduc);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtamount);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbasicsalaryamount);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button6);
@@ -432,7 +411,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txttotalamt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -455,8 +434,6 @@
 
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button6;
@@ -467,7 +444,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txttotalamt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -476,14 +453,14 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbasicsalaryamount;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtamount;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtadvdeduc;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtattandancededuc;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.RadioButton radioButton1;
